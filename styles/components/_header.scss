@@ -1,0 +1,13 @@
+header {
+  margin: 20px;
+
+  & .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include breakpoint(1024px) {
+      justify-content: space-between;
+    }
+  }
+}

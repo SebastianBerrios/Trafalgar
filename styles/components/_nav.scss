@@ -1,0 +1,19 @@
+nav {
+  display: none;
+
+  @include breakpoint(768px) {
+    display: flex;
+    & ul {
+      display: flex;
+      gap: 20px;
+
+      @include breakpoint(1024px) {
+        gap: 40px;
+      }
+
+      & li:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+}

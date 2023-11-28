@@ -1,0 +1,44 @@
+.banner {
+  & .container {
+    padding: 25px;
+    border-radius: 24px;
+    background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
+
+    h2 {
+      color: var(--color-blanco);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    & .testimonial {
+      & .author {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
+        gap: 15px;
+        margin: 20px 0;
+      }
+
+      @include breakpoint(768px) {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+      }
+
+      @include breakpoint(1024px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      & h4,
+      p {
+        color: var(--color-blanco);
+        font-size: 19px;
+        margin: 0;
+      }
+    }
+  }
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+
+  & .element-dark-footer {
+    display: none;
+
+    @include breakpoint(1024px) {
+      display: block;
+      position: absolute;
+      right: -35px;
+      top: -20px;
+      transform: rotate(90deg);
+    }
+
+    @include breakpoint(1440px) {
+      display: none;
+    }
+  }
+
+  & .element-clear-footer {
+    display: none;
+
+    @include breakpoint(1024px) {
+      display: block;
+      position: absolute;
+      left: -135px;
+      bottom: 0;
+    }
+
+    @include breakpoint(1440px) {
+      display: none;
+    }
+  }
+}

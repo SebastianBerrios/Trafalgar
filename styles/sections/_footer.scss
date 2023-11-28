@@ -1,0 +1,20 @@
+footer {
+  background-color: var(--color-azul);
+
+  & .footer-content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 25px;
+
+    @include breakpoint(768px) {
+      grid-template-columns: 1fr 120px 90px 135px;
+    }
+
+    @include breakpoint(1024px) {
+      grid-template-columns: 2.5fr repeat(3, 1fr);
+      grid-gap: 35px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.entry-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 20px;
+
+  @include breakpoint(768px) {
+    grid-template-columns: repeat(2, 350px);
+  }
+
+  @include breakpoint(1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & .entry {
+    border-radius: 20px;
+    background: var(--color-blanco);
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+
+    & h4 {
+      margin-top: 15px;
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+
+    & p {
+      padding-left: 10px;
+      margin: 10px 5px 10px 0;
+    }
+
+    & a {
+      display: inline-block;
+      padding-bottom: 30px;
+      padding-left: 10px;
+    }
+  }
+}

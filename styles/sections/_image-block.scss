@@ -1,0 +1,47 @@
+.image-block {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include breakpoint(768px) {
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+
+    @include breakpoint(1024px) {
+      gap: 60px;
+    }
+  }
+
+  & .btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  & img {
+    @include breakpoint(375px) {
+      margin-top: 10px;
+    }
+
+    @include breakpoint(768px) {
+      max-width: 370px;
+    }
+
+    @include breakpoint(1024px) {
+      max-width: 500px;
+    }
+
+    @include breakpoint(1280px) {
+      max-width: 650px;
+    }
+  }
+
+  &.reverse {
+    & .container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  margin-bottom: 55px;
+}

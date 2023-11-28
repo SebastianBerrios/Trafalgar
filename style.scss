@@ -1,0 +1,22 @@
+@import "./styles/base/mixins";
+@import "./styles/base/universal";
+@import "./styles/base/variables";
+@import "./styles/base/btn";
+
+@import "./styles/components/cards";
+@import "./styles/components/header";
+@import "./styles/components/nav";
+@import "./styles/components/entry-list";
+
+@import "./styles/background-img/hero-element";
+@import "./styles/background-img/services-elements";
+@import "./styles/background-img/image-block";
+@import "./styles/background-img/banner-element";
+@import "./styles/background-img/footer-element";
+
+@import "./styles/sections/hero";
+@import "./styles/sections/image-block";
+@import "./styles/sections/services";
+@import "./styles/sections/blog.scss";
+@import "./styles/sections/footer";
+@import "./styles/sections/banner";
