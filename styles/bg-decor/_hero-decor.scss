@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+
+  & .element-hero {
+    display: none;
+
+    @include breakpoint(1024px) {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -40px;
+    }
+
+    @include breakpoint(1440px) {
+      left: 0;
+    }
+
+    @include breakpoint(1441px) {
+      display: none;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.container {
+footer {
   position: relative;
 
   & .element-dark-footer {
@@ -7,12 +7,12 @@
     @include breakpoint(1024px) {
       display: block;
       position: absolute;
-      right: -35px;
+      right: 20px;
       top: -20px;
       transform: rotate(90deg);
     }
 
-    @include breakpoint(1440px) {
+    @include breakpoint(1441px) {
       display: none;
     }
   }
@@ -20,14 +20,14 @@
   & .element-clear-footer {
     display: none;
 
-    @include breakpoint(1024px) {
+    @include breakpoint(1440px) {
       display: block;
       position: absolute;
-      left: -135px;
+      left: 0;
       bottom: 0;
     }
 
-    @include breakpoint(1440px) {
+    @include breakpoint(1441px) {
       display: none;
     }
   }
