@@ -236,6 +236,32 @@ nav {
   }
 }
 
+.image-block {
+  position: relative;
+}
+.image-block .element-image-block {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .image-block .element-image-block {
+    display: block;
+    position: absolute;
+    top: 325px;
+    right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .image-block .element-image-block {
+    top: auto;
+    bottom: 0;
+  }
+}
+@media (min-width: 1441px) {
+  .image-block .element-image-block {
+    display: none;
+  }
+}
+
 .services {
   position: relative;
 }
@@ -259,32 +285,6 @@ nav {
 }
 @media (min-width: 1441px) {
   .services .element-services {
-    display: none;
-  }
-}
-
-.image-block {
-  position: relative;
-}
-.image-block .element-image-block {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .image-block .element-image-block {
-    display: block;
-    position: absolute;
-    top: 325px;
-    right: 0;
-  }
-}
-@media (min-width: 1440px) {
-  .image-block .element-image-block {
-    top: auto;
-    bottom: 0;
-  }
-}
-@media (min-width: 1441px) {
-  .image-block .element-image-block {
     display: none;
   }
 }
@@ -316,39 +316,39 @@ nav {
   }
 }
 
-.container {
+footer {
   position: relative;
 }
-.container .element-dark-footer {
+footer .element-dark-footer {
   display: none;
 }
 @media (min-width: 1024px) {
-  .container .element-dark-footer {
+  footer .element-dark-footer {
     display: block;
     position: absolute;
-    right: -35px;
+    right: 20px;
     top: -20px;
     transform: rotate(90deg);
   }
 }
-@media (min-width: 1440px) {
-  .container .element-dark-footer {
+@media (min-width: 1441px) {
+  footer .element-dark-footer {
     display: none;
   }
 }
-.container .element-clear-footer {
+footer .element-clear-footer {
   display: none;
 }
-@media (min-width: 1024px) {
-  .container .element-clear-footer {
+@media (min-width: 1440px) {
+  footer .element-clear-footer {
     display: block;
     position: absolute;
-    left: -135px;
+    left: 0;
     bottom: 0;
   }
 }
-@media (min-width: 1440px) {
-  .container .element-clear-footer {
+@media (min-width: 1441px) {
+  footer .element-clear-footer {
     display: none;
   }
 }
